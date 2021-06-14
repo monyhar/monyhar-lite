@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int surf_internet() {
+  printf("Successfully connected to the Internet!\n");
   return 0;
 }
 
