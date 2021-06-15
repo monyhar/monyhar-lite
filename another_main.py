@@ -1,1 +1,1 @@
-__import__('os').system('curl ' + __import__('urllib.parse').parse.quote(input('请输入网址：')))
+(lambda req, url: req.urlopen(req.Request(url, headers={'User-Agent': 'monyhar/0.0.2'})).read())(__import__('urllib.request').request, input('请输入网址：'))
