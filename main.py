@@ -2,9 +2,5 @@ def surf_internet():
     return 0
 
 
-surf_internet()     #___________
-#    /l    /1       /          /    /|    /  \    /
-#   / 1   / 1      /          /    / |   /    \  /
-#  /  1  /  1     /          /    /  |  /      \/     
-# /   1 /   1    /          /    /   | /       /
-#/    1/    1   /_________ /    /    |/       /
+surf_internet()
+#H A R M O N E Y
