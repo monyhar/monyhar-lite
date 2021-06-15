@@ -1,4 +1,4 @@
-optional_function_scope function surf_internet()
+function surf_internet()
   
     return 0
   
