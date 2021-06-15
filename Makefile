@@ -1,5 +1,5 @@
 monyhar-lite: main.o
-	gcc main.o -o monyhar-lite
+	g++ main.o -o monyhar-lite
 
-main.o: main.c
-	gcc -c main.c -o main.o
+main.o: main.cpp
+	g++ -c main.cpp -o main.o
