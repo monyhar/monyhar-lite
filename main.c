@@ -1,9 +1,10 @@
-#include <stdio.h>
+#include "mainHeader.h"
 
-int surf_internet() {
-  return 0;
+
+整数 网上冲浪() {
+  返回 零;
 }
 
-int main() {
-  return surf_internet();
+整数 主函数() {
+  返回 网上冲浪();
 }
