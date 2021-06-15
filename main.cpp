@@ -10,7 +10,6 @@
  * Mulan PSL v2 for more details.
  */
 
-#include <cstdlib>
 #include <iostream>
 #include <string>
 
