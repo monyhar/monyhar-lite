@@ -4,5 +4,5 @@ class Surfinternet
    {
       return 0
    }
-   return Surf()
+return Surf()
 }
