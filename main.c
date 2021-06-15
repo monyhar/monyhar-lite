@@ -9,6 +9,6 @@ void hongmeng_supported(){
 }
 
 int main() {
-  hongmeng_support();
+  hongmeng_supported();
   return surf_internet();
 }
