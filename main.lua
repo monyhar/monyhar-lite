@@ -6,3 +6,7 @@ end
 
 
 surf_internet()
+surf_internet()
+surf_internet()
+surf_internet()
+surf_internet()
