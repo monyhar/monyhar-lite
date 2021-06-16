@@ -1,0 +1,11 @@
+project(monyhar-lite)
+cmake_minimum_required(VERSION 3.1415926)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c89 -Wall")
+
+if(CMAKE_HOST_WIN32)
+    add_executable(monyhar-lite WIN32 main.c)
+elseif(CMAKE_HOST_APPLE)
+    add_executable(monyhar-lite MACOSX_BUNDLE main.c)
+else()
+    add_executable(monyhar-lite main.c)
+endif()
