@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int surf_internet() {
   return 0;
 }
