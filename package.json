@@ -1,0 +1,23 @@
+{
+  "name": "monyhar-lite",
+  "version": "1.0.0",
+  "description": "梦弘浏览器 自主研发版本 - 完全自主研发，打破国外垄断，比 Chrome 快 600%。缺少上网功能。",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KinoriN/monyhar-lite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KinoriN/monyhar-lite/issues"
+  },
+  "homepage": "https://github.com/KinoriN/monyhar-lite#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^13.1.2"
+  }
+}

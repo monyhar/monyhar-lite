@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>梦弘浏览器</title>
+  </head>
+  <body>
+    <h1>梦弘浏览器</h1>
+    <input id="site" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+  </body>
+  <script>
+    const input = document.getElementById("site");
+    document.onkeydown = (event) => {
+      console.log(event);
+      console.log(event.code);
+      if (event.keyCode === 13) {
+        window.location = input.value;
+      }
+    };
+  </script>
+</html>
