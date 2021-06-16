@@ -7,3 +7,5 @@ const surf_intenet = (): Main => {
 };
 
 surf_intenet();
+
+// 你们不愿意支持Monyhar，我很为难啊
