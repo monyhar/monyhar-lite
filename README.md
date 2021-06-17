@@ -13,3 +13,5 @@
 居然还特么能在任意浏览器体验！
 
 ~~甚至Jeff Dean挑不出毛病.~~
+
+![avatar](https://raw.githubusercontent.com/tucaoba2333/monyhar-lite-MultiLang-kernel/master/20200502123040294.png)
