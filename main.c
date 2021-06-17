@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-int surf_internet() {
+int brewCoffee() {
+  printf("肆佰壹拾捌 吾乃茶壶");
   return 0;
 }
 
 int main() {
-  return surf_internet();
+  return brewCoffee();
 }
