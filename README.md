@@ -2,7 +2,7 @@
 # QQ Group：216578013
 【Monyhar-MultiLang开发讨论】：https://jq.qq.com/?_wv=1027&k=nNUaIR3c
 ![avatar](https://raw.githubusercontent.com/tucaoba2333/monyhar-lite-MultiLang-kernel/monyhar/release/assests/qrcode_1623936172992.jpg)
-# 欢迎添砖Java，贡献其他语言（急缺木兰语言！！！！
+# 欢迎添砖Java，贡献其他语言
 ## 梦弘浏览器 
 
 自主研发版本 - 完全自主研发，打破国外垄断
