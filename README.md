@@ -1,4 +1,9 @@
 # Monyhar-lite
+# QQ Group：216578013
+【Monyhar-MultiLang开发讨论】：https://jq.qq.com/?_wv=1027&k=nNUaIR3c
+
+![avatar]https://raw.githubusercontent.com/tucaoba2333/monyhar-lite-MultiLang-kernel/monyhar/release/assests/qrcode_1623936172992.jpg
+
 # 欢迎添砖Java，贡献其他语言（急缺木兰语言！！！！
 ## 梦弘浏览器 
 
@@ -9,8 +14,6 @@
 完全自主研发的Python内核，前无古人后无来者.
 
 完全自主研发的java以及jvav内核，张博士看了甚至惊掉下巴.
-
-![avatar](https://raw.githubusercontent.com/tucaoba2333/monyhar-lite-MultiLang-kernel/master/20200502123040294.png)
 
 居然还特么能在任意浏览器体验！
 
