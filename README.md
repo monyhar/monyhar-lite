@@ -17,3 +17,22 @@
 
 ~~甚至Jeff Dean挑不出毛病.~~
 
+## 内核目前支持的语言
+
+- C
+- C#
+- C++
+- Java
+- Python
+- Jvav
+- 易语言
+- hpprgm 计算器语言
+- Go
+- HTML
+- Rust
+- Shell
+- PHP
+- JavaScript
+- Lua
+- TypeScript
+- Visual Basic
