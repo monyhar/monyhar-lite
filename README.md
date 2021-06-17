@@ -26,7 +26,7 @@
 - Python
 - Jvav
 - 易语言
-- hpprgm 计算器语言
+- HP Basic PPL
 - Go
 - HTML
 - Rust
