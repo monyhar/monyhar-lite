@@ -10,5 +10,3 @@ def surf_internet(url):
 
 
 surf_internet(url)
-
-
