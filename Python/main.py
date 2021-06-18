@@ -1,10 +1,14 @@
-def surf_internet():
-    (lambda req, url: req.urlopen(req.Request(url, headers={'User-Agent': 'monyhar/0.0.2'})).read())(
-        __import__('urllib.request').request, input('请输入网址：'))
-    return 0
+import requests
+
+url = input("url:")
 
 
-surf_internet()
+def surf_internet(url):
+    html = requests.get(url)
+    print(html.status_code)  # 打印返回的http code
+    print(html.text)  # 打印返回结果的text
 
-# H A R M O N E Y
-# MONEY MONEY MONEY,MONEY MONEY(自行脑补屑女仆
+
+surf_internet(url)
+
+
