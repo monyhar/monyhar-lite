@@ -1,9 +1,0 @@
-EXPORT main()
-BEGIN
-monyhar_surf_internet()
-END;
-
-EXPORT monyhar_surf_internet()
-BEGIN
-RETURN 0;
-END;
