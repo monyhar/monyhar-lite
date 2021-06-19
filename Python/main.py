@@ -1,12 +1,28 @@
+from typing import Dict, Any
+
 import requests
 
-url = input("url:")
+if_proxy = input("Do you want to set proxy server?[Y/n]")
+
+if if_proxy == "Y":
+    http_proxy = input("Type http proxy address here.")
+    https_proxy = input("Type https proxy address here.")
+
+    proxies: dict[str, Any] = {"http": http_proxy, "https": https_proxy}
+
+
+else:
+    print("No proxy server was set.")
 
 
 def surf_internet(url):
     html = requests.get(url)
-    print(html.status_code)  # 打印返回的http code
-    print(html.text)  # 打印返回结果的text
+    print(html.status_code)  # print the http code returned.
+    print(html.text)  # print text returned.
 
+
+# After input url,please use 'surf_internet(url)' to surf internet
+
+url = input("url:")
 
 surf_internet(url)
