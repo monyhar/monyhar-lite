@@ -3,7 +3,6 @@ import requests
 from typing import Dict, Any
 
 # U know the rules,
-from sqlmap.thirdparty.bottle.bottle import url
 
 # And so do I~
 
