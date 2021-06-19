@@ -26,3 +26,5 @@ def surf_internet(url):
 url = input("url:")
 
 surf_internet(url)
+
+
