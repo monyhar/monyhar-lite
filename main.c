@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int surf_internet() {
-  return 0;
+  return 1;
 }
 
 int main() {
