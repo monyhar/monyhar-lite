@@ -1,0 +1,85 @@
+using * in PyQt5.QtCore
+using * in PyQt5.QtWidgets
+using QWebEngineView in PyQt5.QtWebEngineWidgets 
+using sys
+
+/* 
+木兰语言重现项目: https://gitee.com/MulanRevive/mulan-rework
+pypi 安装: pip install ulang
+运行: 
+$ 木兰 中.ul
+*/
+type 演示 : QMainWindow {
+    func $演示() {
+        super()
+        $setAttribute(Qt.WA_DeleteOnClose)
+        $页面 = QWidget()
+        $地址栏 = ""
+        $页面视图 = $界面($页面)
+        $setCentralWidget($页面)
+        $showMaximized()
+    }
+
+    func $界面(页面) {
+        $tabWidget = QTabWidget()
+
+        地址栏 = QLineEdit()
+        地址栏.returnPressed.connect($requestUri)
+
+        布局 = QGridLayout()
+
+        布局.setContentsMargins(0,0,0,0)
+
+        导航框 = QWidget()
+        导航框.setMaximumHeight(32)
+
+        导航区 = QGridLayout(导航框)
+        导航区.setSpacing(0)
+        导航区.setContentsMargins(0,0,0,0)
+        导航区.addWidget(地址栏, 0, 4)
+
+        布局.addWidget(导航框)
+
+        视图 = QWebEngineView()
+        空白 = "<head><style>body{ background-color: #fff; }</style></head><body></body>";
+        视图.setHtml(空白)
+
+        框架 = QFrame()
+        框架.setFrameStyle(QFrame.Panel)
+
+        网格布局 = QGridLayout(框架);
+        网格布局.setContentsMargins(0, 0, 0, 0);
+        网格布局.addWidget(视图, 0, 0, 1, 1);
+        框架.setLayout(网格布局)
+
+        $tabWidget.setCurrentWidget(视图)
+        $地址栏 = 地址栏
+        布局.addWidget(框架)
+        页面.setLayout(布局)
+        return 视图
+    }
+
+    // 不确定是否为重载时，不修改接口名
+    func $requestUri {
+        地址文本 = $地址栏.text()
+        // 仅有域名时，默认 https
+        $地址栏.setText('https://' + 地址文本) if 地址文本.find('http') == -1
+
+        地址 = QUrl($地址栏.text())
+
+        if 地址.isValid() {
+            $页面视图.load(地址)
+        } else {
+            print("无效地址")
+        }
+    }
+}
+
+func main {
+   app = QApplication(sys.argv)
+   ex = 演示()
+   ex.show()
+   sys.exit(app.exec_())
+}
+
+main() if __name__ == '__main__'
