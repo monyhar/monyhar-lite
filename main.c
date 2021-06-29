@@ -17,9 +17,15 @@ int main(int argc, char *argv[]) {
       if (strstr(argv[i], "-v") == argv[i]) slow_loglevel(DBG);
     }
   }
+
   if (parse_uri(argv[argc - 1], &uri_parsed)) {
     L_ERRF("Fatal error when parsing URL: %s", argv[argc - 1]);
     return 1;
+  }
+
+  if (strcmp(uri_parsed.proto, "http")) {
+    L_ERRF("Unsupported protocol: %s", uri_parsed.proto);
+    exit(1);
   }
 
   struct addrinfo hints, *servinfo, *p;
@@ -59,7 +65,8 @@ int main(int argc, char *argv[]) {
 
   inet_ntop(p->ai_family, get_in_addr((struct sockaddr *)p->ai_addr), s,
             sizeof s);
-  L_DEBUGF("connecting to %s...", s);
+  L_DEBUGF("connecting to %s (%s:%s)...", uri_parsed.hostname, s,
+           uri_parsed.port);
 
   freeaddrinfo(servinfo);  // all done with this structure
 

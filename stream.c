@@ -92,9 +92,10 @@ ssize_t recv_to_fd(int sockfd, int filefd) {
       L_INFO("Server responsed: 200 OK...");
       ptr += ret;
     } else {
-      char tmp[20];
-      memset(tmp, 0, 20);
-      strncpy(tmp, spliter + 1, strchr(spliter, '\r') - spliter - 1);
+      char tmp[100];
+      memset(tmp, 0, 100);
+      int r_code_len = strchr(spliter, '\r') - spliter - 1;
+      strncpy(tmp, spliter + 1, r_code_len > 99 ? 99 : r_code_len);
       L_INFOF("Server responsed: %s", tmp);
       free(buf);
       return 0;
