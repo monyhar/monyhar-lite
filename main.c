@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 int surf_internet() {
-  return 0;
+  //WIP
+  printf("无法上网，请检查网络状况");
+  retern 114514;
 }
 
 int main() {
-  return surf_internet();
+  surf_internet();
+  returm 1919810;
 }
