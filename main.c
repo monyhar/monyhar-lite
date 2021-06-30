@@ -1,9 +1,12 @@
-#include <stdio.h>
-
-int surf_internet() {
-  return 0;
+#include<windows.h>
+#include<string.h>
+#include<iostream>
+int surf_internet(std::string url){
+  system(url.c_str());
 }
-
 int main() {
-  return surf_internet();
+  std::string o;
+  std::cin>>o;
+  surf_internet("start http://"+o);
 }
+
