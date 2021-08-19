@@ -8,6 +8,9 @@ from tqdm import tqdm
 配置参数:
     homepage: 浏览器首页地址(默认为梦弘搜索器)
 '''
+
+# Test request
+
 HOMEPAGE = 'https://so.monyhar.top/'
 
 def icon():
